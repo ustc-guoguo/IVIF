@@ -49,7 +49,7 @@
 
 ### 数据集
 
-| Dataset | 地址 | 图片对数 | 分辨率 | color｜
+| Dataset | 地址 | 图片对数 | 分辨率 | color |
 |---|---|---|---|---|
 | TNO | https://figshare.com/articles/dataset/TNO_Image_Fusion_Dataset/1008029 | 261 | 768*576 | ❌ |
 | RoadSence | https://github.com/hanna-xu/RoadScene | 221 | Various | ✅ |
@@ -68,7 +68,7 @@
 | 灰度类（Grayscale / L） | 只有亮度（Y = 0.299R + 0.587G + 0.114B） | OpenCV |
 | RGB类（直接存颜色） | R（红） + G（绿） + B（蓝） | PIL |
 | 亮度-色度分离类（YCbCr / YUV） | Y（亮度）；Cb（蓝色差）；Cr（红色差）；人眼对亮度敏感，—对颜色不敏感 | RGB转换 |
-｜离散整数（类别ID）｜label｜PIL｜
+| 离散整数（类别ID） | label | PIL |
 
 ### 评估指标
 
