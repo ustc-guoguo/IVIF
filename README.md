@@ -61,7 +61,6 @@
 ### 图像模式
 
 > 大部分融合算法的处理流程：RGB -> YCbCr -> f=FusionNet(Y, if) -> fCbcr -> RGB
-> 注：PIL默认打开方式RGB，而OpenCV默认打开方式为BGR，OpenCV：0 → 灰度模式 → (H, W)
 
 | 类型 | 区别 | 最合适读取方式 |
 |---|---|---|
@@ -69,6 +68,7 @@
 | RGB类（直接存颜色） | R（红） + G（绿） + B（蓝） | PIL |
 | 亮度-色度分离类（YCbCr / YUV） | Y（亮度）；Cb（蓝色差）；Cr（红色差）；人眼对亮度敏感，—对颜色不敏感 | RGB转换 |
 | 离散整数（类别ID） | label | PIL |
+> 注：PIL默认打开方式RGB，而OpenCV默认打开方式为BGR，OpenCV：0 → 灰度模式 → (H, W)
 
 ### 评估指标
 
